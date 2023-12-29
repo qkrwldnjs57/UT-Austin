@@ -1,0 +1,30 @@
+/* profile.module.css */
+.profile {
+    margin-top: 10px;
+    margin-left:10px;
+}
+.nicknameLine {
+    border-bottom: 1px solid #ccc; /* 구분선 스타일 */
+    padding-bottom: 10px; /* 아래쪽 패딩 */
+    margin-bottom: 20px; /* 구분선 아래 마진 */
+}
+
+.postList {
+    list-style: none; /* 기본 목록 스타일 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+    margin-left: 20px;
+}
+
+.postItem {
+    border-bottom: 1px solid #eee; /* 각 게시물 아래 구분선 */
+    padding: 10px 0; /* 패딩 */
+    margin-bottom: 10px; /* 마진 */
+}
+
+.postTitle {
+    color: orange; /* 제목 색상 */
+    cursor: pointer; /* 마우스 오버 포인터 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+/* 추가적인 스타일링이 필요하면 이곳에 추가하세요 */

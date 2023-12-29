@@ -1,0 +1,81 @@
+
+.search-list {
+    position: relative;
+    align-items: center;
+    /*doesn't change..?*/
+}
+
+.ut-logo {
+    display: flex;
+    justify-content: center;
+    margin-top:90px;
+    margin-bottom:20px;
+}
+
+
+.filter {
+    position: relative;
+}
+
+
+
+.filter-title {
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    /*interesting.. - value*/
+    padding-right:870px;
+    margin-top: 95px;
+
+
+
+
+
+    /*
+    position: absolute;
+    margin-top: 95px;
+    margin-left: 380px;
+    */
+    color: #000000;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+
+.filters-row {
+    display: flex;
+    justify-content: center;
+    padding-top:15px;
+    padding-right:200px;
+    gap: 50px;
+}
+
+
+.grouped-list {
+    display:flex;
+    flex-direction:column;
+    
+    align-items: center;
+    padding-right: 0px;
+    margin-top: 52.26px;
+    left: 370px;
+    gap:24px;
+}
+
+.no-results {
+    text-align: center;
+    padding: 50px 0;
+    color: #555;
+  }
+
+.no-results p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #666;
+}
+
+

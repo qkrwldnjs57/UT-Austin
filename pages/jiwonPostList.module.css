@@ -1,0 +1,23 @@
+.post-list-page{
+    /* background-color: green; */
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.course-details{
+    /* background-color: grey; */
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #ccc;
+}
+
+.ut-logo {
+    display: flex;
+    justify-content: center;
+    margin-top:90px;
+    margin-bottom:20px;
+}
+
+.title{
+    font-size:20px
+}

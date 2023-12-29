@@ -1,0 +1,54 @@
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.content {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+
+.myButton {
+    background-color: chocolate;
+  
+  }
+  
+.myButton:hover{
+    background-color: hsl(0, 0%, 93%);
+  
+  }
+
+.whiteBackground {
+    background-color: #ffffff; /* White background color */
+  }
+
+.topBar {
+    background: #c2570c; /* Orange color for the top bar */
+    width: 1440px; /* Set the width to 1440 pixels */
+    height: 92px; /* Set the height to 92 pixels */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px; /* Add padding as needed */
+    /* Add other styles as needed */
+  }
+  
+.UtexasLogo{
+  position: absolute;
+  top: 35px; /* Adjust the top position as needed */
+  right: 20px; /* Adjust the right position as needed */
+  max-width: 100%; /* Ensure the image doesn't exceed its container width */
+  /* Add any additional styles you need for the image */
+  width: 120px;
+  height: auto;
+
+}
+  
+  
+  
