@@ -1,0 +1,121 @@
+
+.list-box {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 970px;
+    height: 180px;
+    background-color: hsl(200, 39%, 95%);
+    border-radius: 0.99rem;
+}
+
+.text-container {
+    margin-top:24px;
+    margin-left:58px;
+}
+.course-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: -5px;
+    position: relative; /* 가상 요소의 위치 기준점 설정 */
+    display: inline-block; /* 텍스트 너비에 맞춰진 박스 모델 생성 */
+    padding: 3px 0; /* 패딩 추가 */
+    transition: color 0.3s; /* 색상 변화에 대한 부드러운 전환 효과 */
+}
+
+.course-name::after {
+    content: '';
+    position: absolute;
+    width: 100%; /* 호버 시 밑줄의 너비를 요소의 전체 너비로 설정 */
+    height: 2px;
+    bottom: 7px;
+    left: 0;
+    background-color: #888; /* 밑줄 색상 */
+    transition: all 0.3s; /* 모든 변화에 대한 부드러운 전환 효과 */
+    opacity: 0; /* 처음에는 밑줄을 보이지 않게 설정 */
+    transform: scaleX(0); /* 처음에는 밑줄의 길이를 0으로 설정 */
+    transform-origin: bottom left; /* 밑줄이 왼쪽에서 오른쪽으로 확장되도록 설정 */
+}
+
+.course-name:hover::after {
+    opacity: 1; /* 호버 시 밑줄을 보이게 설정 */
+    transform: scaleX(1); /* 호버 시 밑줄의 길이를 실제 요소의 길이로 설정 */
+}
+
+.course-name:hover {
+    cursor: pointer; /* 마우스 포인터를 손가락 모양으로 변경 */
+}
+
+
+.professor-name {
+    margin-top: 6.5px;
+    font-size: 16px;
+    margin-bottom : -5px;
+}
+
+.latest-review {
+    margin-top: 28.5px;
+    font-size: 14px;
+}
+
+.latest-review span{
+    font-weight: 400;
+}
+
+.latest-review p {
+    color: #99440e;
+    font-style:italic;
+    margin-top: 3px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-right: 36px;
+    /* background-color: red; */
+  
+}
+
+.button-for-ray {
+    margin-top: 15px;
+    margin-bottom: -15px;
+    background-color: #2D3C66;
+    border-radius: 5px;
+    color: white; /* 기본 글씨색 */
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    padding-left:5px;
+    padding-right:5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* 부드러운 전환 효과 */
+}
+
+.button-for-ray:hover {
+    background-color: #191A4A; /* 호버 시 배경색을 더 어두운 색으로 변경 */
+    color: #ffffff; /* 호버 시 글씨색을 밝은 색으로 변경 (이 경우 이미 흰색이므로 변경하지 않음) */
+    transform: translateY(-1px); /* 버튼을 살짝 위로 올라가게 함 */
+    cursor: pointer; /* 마우스 포인터를 손가락 모양으로 변경 */
+}
+
+.average-rating {
+    font-size: 63px;
+    font-weight: bold;
+  
+}
+
+.based-on {
+    font-size: 16px;
+    color: #414141;
+    text-align :right;
+    margin-top:-px;
+    margin-bottom: -7px;
+}
+
+.review-count{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: right;
+}

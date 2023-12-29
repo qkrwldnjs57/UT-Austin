@@ -1,0 +1,77 @@
+.navbar {
+  width: 100vw;
+  height: 60px;
+  min-width: 1440px;
+  display: flex;
+  justify-content: center;
+  background: #c2570c; /* Orange color for the top bar */
+  /* position: sticky; */
+  /* padding: 0 16px; */
+  align-items: center;
+}
+.navbarInner {
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  align-items: center;
+}
+.logo {
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+  /* height
+  : auto; */
+}
+.login {
+  width: 36px;
+  height: 36px;
+}
+.loginWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  padding: 0 8px;
+}
+
+.loginLink {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjust the space between the icon and the text */
+}
+
+.loginText {
+  display: inline-block;
+  color: white;
+  /* cursor: pointer; */
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  top: 36px;
+  width: 100%;
+  z-index: 999999;
+  padding: 16px 0;
+}
+.dropdown-button {
+  background-color: rgba(255, 255, 255, 0.74);
+  text-align: center;
+  padding: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  width:100px;
+  margin-left:40px;
+}
+.dropdown-button:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.loginWrapper:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  width: auto; /* Remove the width: 100%; if you want the dropdown width to fit its content */
+}
